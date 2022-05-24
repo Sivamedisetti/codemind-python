@@ -1,11 +1,7 @@
-a=0
-b=1
-print(a,end=" ")
-print(b,end=" ")
+def fib(n):
+    if n<=1:
+        return n
+    return fib(n-1)+fib(n-2)
 n=int(input())
-for i in range(2,n):
-    c=a+b
-    a=b
-    b=c
-    print(c,end=" ")
-    
+for i in range(n):
+    print(fib(i),end=" ")
