@@ -1,4 +1,4 @@
-x = int(input())
+x =int(input())
 y = int(input())
 l = 0
 for i in range(x,y+1):
