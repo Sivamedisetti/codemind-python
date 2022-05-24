@@ -24,4 +24,3 @@ elif (n-a)==(b-n):
     print(a,b)
 else:
     print(b)
-
