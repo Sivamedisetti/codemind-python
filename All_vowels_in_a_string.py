@@ -2,9 +2,9 @@ n=input()
 a=[]
 b=[]
 for i in n:
-    if i=='a'or i=='e'or i=='i'or i=='o' or i =='u':
+    if i in "aeiou":
         a.append(i)
-    elif i=='A'or i=='E'or i=='I'or i=='O' or i =='U':
+    elif i in "AEIOU":
         b.append(i)
 m=len(set(a))
 n=len(set(b))
