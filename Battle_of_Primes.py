@@ -13,8 +13,4 @@ while a!=0:
     if prime(a):
         print(abs(x+y-a))
         break
-    else:
-        a+=1
-    
-    
-    
+    a+=1
