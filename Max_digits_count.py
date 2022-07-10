@@ -1,14 +1,11 @@
-def dig(n):
-    c=0
-    while n!=0:
-        n//=10
-        c+=1
-    return c
 n=int(input())
-k=[]
 l=list(map(int,input().split()))
+m=[]
 for i in l:
-    k.append(dig(i))
-s=max(k)
-print(k.count(s))
-    
+    m.append(len(str(i)))
+x=max(m)
+c=0
+for i in m:
+    if i>=x:
+        c+=1
+print(c)
