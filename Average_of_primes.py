@@ -6,9 +6,9 @@ def prime(n):
             return 0
     return 1
 n=int(input())
+m=[]
 l=list(map(int,input().split()))
-k=[]
 for i in l:
     if prime(i):
-        k.append(i)
-print(format(sum(k)/len(k),".2f"))
+        m.append(i)
+print('%.2f' %(sum(m)/len(m)))
