@@ -1,15 +1,9 @@
-x=eval(input())
-a=x
-n=len(str(x))
+n=input()
 s=0
-while x!=0:
-    y=x%10
-    x=x//10
-    m=y**n
-    s+=m
-    n-=1
-if s==a:
-    print("True")
+for i in range(len(n)):
+    s+=int(n[i])**(i+1)
+if int(n)==s:
+    print(True)
 else:
-    print("False")
+    print(False)
     
