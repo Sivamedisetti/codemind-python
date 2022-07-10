@@ -7,16 +7,15 @@ def prime(n):
     return 1
 x = int(input())
 l = list(map(int,input().split()))
-a=l.index(max(l))
-b=l.index(min(l))
+n = l.index(max(l))
+m = l.index(min(l))
 c=0
-if a>b:
-    for i in range(b,a+1):
+if m<n:
+    for i in range(m,n+1):
         if prime(l[i]):
             c+=1
 else:
-    for i in range(a,b+1):
+    for i in range(n,m+1):
         if prime(l[i]):
             c+=1
 print(c)
- 
