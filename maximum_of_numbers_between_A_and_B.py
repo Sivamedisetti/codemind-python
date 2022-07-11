@@ -1,13 +1,12 @@
-n=int(input())
+n=input()
 l=list(map(int,input().split()))
-a,b=map(int,(input().split()))
-k=[]
+m=[]
+x,y=map(int,input().split())
 c=0
 for i in l:
-    if i>=a and i<=b:
-        k.append(i)
+    if i>=x and i<=y:
+        m.append(i)
         c=1
 if c==0:
     print("-1")
-else:
-    print(max(k))
+print(max(m))
