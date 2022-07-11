@@ -1,12 +1,12 @@
-x = int(input())
-l = list(map(int,input().split()))
-s=[]
-c=0
+n=int(input())
+l=list(map(int,input().split()))
+m=[]
 for i in set(l):
-    if l.count(i)==i:
-        s.append(i)
-if s==[]:
+    if i==l.count(i):
+        m.append(i)
+if m==[]:
     print("-1")
 else:
-    print(min(s),end=" ")
-    print(max(s))
+    print(min(m),end=" ")
+    print(max(m),end=" ")
+    
