@@ -1,10 +1,10 @@
-x=int(input())
+n=int(input())
 l=list(map(int,input().split()))
-s=[]
+c=[]
 for i in set(l):
-    if l.count(i)==i:
-        s.append(i)
-if s==[]:
+    if i==l.count(i):
+        c.append(i)
+if c==[]:
     print("-1")
 else:
-    print(format(sum(s)/len(s),".2f"))
+    print(format(sum(c)/len(c),".2f"))
