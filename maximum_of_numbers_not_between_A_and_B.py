@@ -1,14 +1,11 @@
 n=int(input())
 l=list(map(int,input().split()))
-a,b=map(int,input().split())
-s=[]
-c=0
+x,y=map(int,input().split())
+m=[]
 for i in l:
-    if i>=a and i<=b:
-        pass
-    else:
-        s.append(i)
-        c=1
-if c==0:
+    if (i<x or i>y):
+        m.append(i)
+if m==[]:
     print("-1")
-print(max(s))
+else:
+    print(max(m))
