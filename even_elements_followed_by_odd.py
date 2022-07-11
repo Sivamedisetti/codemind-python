@@ -1,9 +1,9 @@
-x=int(input())
+n=int(input())
 l=list(map(int,input().split()))
-k=[]
+m=[]
 for i in l:
-    if i%2==0:
-        print(i,end=" ")
+    if i%2==1:
+        m.append(i)
     else:
-        k.append(i)
-print(*k)
+        print(i,end=" ")
+print(*m)
