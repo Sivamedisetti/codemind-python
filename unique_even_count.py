@@ -1,7 +1,7 @@
 n=int(input())
-l=list(map(int,input().split()))
+l=set(map(int,input().split()))
 c=0
-for i in set(l):
+for i in list(l):
     if i%2==0:
         c+=1
 print(c)
