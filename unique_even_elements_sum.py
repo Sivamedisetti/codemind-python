@@ -1,7 +1,7 @@
 n=int(input())
-l=list(map(int,input().split()))
-sum=0
-for i in set(l):
+l=set(map(int,input().split()))
+c=0
+for i in list(l):
     if i%2==0:
-        sum+=i
-print(sum)
+        c+=i
+print(c)
