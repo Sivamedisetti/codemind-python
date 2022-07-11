@@ -1,9 +1,9 @@
 n=int(input())
 l=list(map(int,input().split()))
-a,b=0,0
+s,c=0,0
 for i in range(n):
     if i<n//2:
-        a+=l[i]
+        s+=l[i]
     else:
-        b+=l[i]
-print(abs(a-b))
+        c+=l[i]
+print(abs(c-s))
