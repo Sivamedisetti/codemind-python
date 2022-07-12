@@ -1,10 +1,7 @@
-x=int(input())
-sum=0
+n=int(input())
 l=list(map(int,input().split()))
-for i in l:
-    sum+=i
-a=sum//x
-if a in l:
+k=sum(l)//len(l)
+if k in l:
     print(True)
 else:
     print(False)
