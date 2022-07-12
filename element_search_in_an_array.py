@@ -1,10 +1,7 @@
-x=int(input())
+n=int(input())
 l=list(map(int,input().split()))
-s=int(input())
-for i in l:
-    if s in l:
-        print(True)
-        break
-    else:
-        print(False)
-        break
+k=int(input())
+if k in l:
+    print(True)
+else:
+    print(False)
