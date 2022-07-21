@@ -1,9 +1,10 @@
-x=list(map(str,input().split()))
-a=len(x)
-x=x[a-1]
-n=min(x)
-m=n.lower()
-if(x.count(m)!=0):
-    print(m)
+s=list(map(str,input().split()))
+s=s[len(s)-1]
+n=min(s)
+if n>='A' and n<='Z':
+    if n.lower() in s:
+        print(n.lower())
+    else:
+        print(n)
 else:
     print(n)
