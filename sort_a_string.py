@@ -1,14 +1,16 @@
-a = input()
-m=[]
-for i in a:
+x = input()
+m,n=[],[]
+for i in x:
     if i.isalnum():
         m.append(i)
-n=0
-m=sorted(m)
-for i in a:
-    if i.isalnum():
-        print(m[n],end="")
-        n+=1
     else:
-        print(i,end="")
-        
+        n.append(i)
+m.sort()
+k,l=0,0
+for i in x:
+    if i.isalnum():
+        print(m[k],end="")
+        k+=1
+    else:
+        print(n[l],end="")
+        l+=1
