@@ -1,18 +1,17 @@
-l=list(map(str,input().split()))
+x = list(map(str,input().split()))
+a='~!@#$%^&*()_-`?.,<>{}[]'
 m=[]
-for i in l:
+for i in x:
     for j in i:
-        if j>='a' and j<='z':
+        if j not in a:
             m.append(j)
     m.sort()
-    a=0
+    k=0
     for j in i:
-        if j>='a'and j<='z':
-            print(m[a],end="")
-            a+=1
-        else:
+        if j in a:
             print(j,end="")
+        else:
+            print(m[k],end="")
+            k+=1
     print(end=" ")
     m.clear()
-            
-            
