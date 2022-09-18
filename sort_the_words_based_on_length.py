@@ -1,12 +1,10 @@
-n=list(map(str,input().split()))
-s=[]
-k=0
-for i in n:
+x=list(map(str,input().split()))
+l=[]
+for i in x:
+    c=0
     for j in i:
-        k+=ord(j)
-    s.append([k,i])
-    k=0
-s.sort()
-for i in s:
-    print(i[1],end=" ")
-
+        c+=ord(j)
+    l.append([c,i])
+l.sort()
+for a in l:
+    print(a[1],end=" ")
